@@ -1,0 +1,8 @@
+title 0.6: New note (single page app)
+
+note over browser:
+browser executes js code
+browser adds new note and rerenders list
+browser then sends the new note to the server
+end note
+browser -> server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
