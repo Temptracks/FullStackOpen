@@ -1,0 +1,29 @@
+title 0.4: New note
+
+note over browser: 
+POST request upon\nclicking the submit button.
+end note
+
+browser -> server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+
+note over server: 
+JS on server appends the data submitted to
+an array called notes and requests 
+browser to refresh the page.
+This displays the new note upon reload.
+end note
+
+server --> browser: URL redirect - ask for HTTP GET request for /exampleapp/notes
+
+note over browser: 
+Browser reloads the page
+end note
+
+browser -> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+server --> browser: HTML-code
+browser -> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server --> browser: main.css
+browser -> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server --> browser: main.js
+browser -> server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server --> browser: data.json
